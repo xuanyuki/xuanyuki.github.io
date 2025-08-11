@@ -1,0 +1,4 @@
+error_404:
+  enable: true
+  subtitle: '无效的页面'
+  background:
