@@ -8,6 +8,8 @@ inject:
 
 menu:
   首页: / || iconfont icon-shouye
+  标签: /tags || iconfont icon-biaoqian
+  分类: /categories || iconfont icon-fenlei
 
 code_blocks:
   theme: pale night
