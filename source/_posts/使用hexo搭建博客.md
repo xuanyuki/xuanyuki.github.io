@@ -7,3 +7,5 @@ categories: 日常
 top_img:
 cover:
 ---
+
+# 安装

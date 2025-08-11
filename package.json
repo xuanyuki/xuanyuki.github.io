@@ -7,7 +7,9 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "build-deploy": "hexo clean && hexo deploy"
+    "build-deploy": "hexo clean && hexo deploy",
+    "post":"hexo new post $title",
+    "new-pag":"hexo new page $title"
   },
   "hexo": {
     "version": "7.3.0"
