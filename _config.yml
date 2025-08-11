@@ -4,7 +4,6 @@
 
 # Site
 title: 咸鱼鱼的小窝
-subtitle: 祝你千钧遏浪，万壑飞缰
 description: '欢迎'
 keywords: blog
 author: 咸鱼鱼🐟
@@ -40,7 +39,10 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
+marked:
+  prependRoot: true # prepend the root path to url which is similar with post_asset_folder option
+  postAsset: true # make posts in directories under source/_posts also have assets folder
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -101,4 +103,12 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/xuanyuki/xuanyuki.github.io
+  branch: gh-pages
+
+aplayer:
+  asset_inject: false
+  meting: true
+
+pjax: true

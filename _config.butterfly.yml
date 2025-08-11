@@ -1,4 +1,175 @@
+inject:
+  head:
+    # 注入icon
+    - <link rel="stylesheet" href="/css/iconfont.css">
+  bottom:
+    # 注入音乐播放器
+    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+
+menu:
+  首页: / || iconfont icon-shouye
+
+code_blocks:
+  theme: pale night
+  word_wrap: true
+  copy: true
+  language: true
+  shrink: true
+
+avatar:
+  img: /images/avatar.jpg'
+  effect: false
+
+# 首页顶部图片
+index_img: /images/homebanner.jpeg
+# 标签的的顶部图片
+tag_img: 
+# 分类的顶部图片
+category_img:
+# 网站背景
+background:
+
+cover:
+  index_enable: true
+
 error_404:
   enable: true
-  subtitle: '无效的页面'
+  subtitle: "无效的页面"
   background:
+
+subtitle:
+  enable: true
+  effect: true
+  source: false
+  sub:
+    - 祝你千钧遏浪，万壑飞缰
+
+# 首页卡片布局  https://butterfly.js.org/posts/4aa8abbe/#%E9%A6%96%E9%A0%81%E5%8D%A1%E7%89%87%E4%BD%88%E5%B1%80
+index_layout: 3
+
+toc:
+  post: true
+  page: false
+  number: true
+  expand: false
+  # Only for post
+  style_simple: false
+  scroll_percent: true
+
+related_post:
+  enable: true
+  limit: 6 # 顯示推薦文章數目
+  date_type: updated # or created or updated 文章日期顯示創建日或者更新日
+
+nav:
+  display_post_title: true
+
+footer:
+  owner:
+    enable: true
+    since: 2025
+
+aside:
+  enable: true
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    runtime_date:
+
+readmode: true
+# show scroll percent in scroll-to-top button
+rightside_scroll_percent: true
+
+# anchor
+anchor:
+  # when you scroll, the URL will update according to header id.
+  auto_update: false
+  # Click the headline to scroll and update the anchor
+  click_to_scroll: false
+
+# 图片描述
+photofigcaption: true
+
+# 字数统计
+# Need to install the hexo-wordcount plugin
+wordcount:
+  enable: false
+  # Display the word count of the article in post meta
+  post_wordcount: true
+  # Display the time to read the article in post meta
+  min2read: true
+  # Display the total word count of the website in aside's webinfo
+  total_wordcount: true
+
+# 访问人数统计
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# 搜索功能
+# Choose: algolia_search / local_search / docsearch
+# leave it empty if you don't need search
+search: 
+  use: local_search
+  placeholder: 输入关键词来搜索吧
+  path: db.json
+  field: post
+  content: true
+  format: striptags
+
+local_search:
+  # Preload the search data when the page loads.
+  preload: false
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: false
+  CDN:
+
+# Microsoft Clarity
+# https://clarity.microsoft.com/
+microsoft_clarity: st3fdvlt0d
+
+# Typewriter Effect (打字效果)
+# https://github.com/disjukr/activate-power-mode
+activate_power_mode:
+  enable: true
+  colorful: true # open particle animation (冒光特效)
+  shake: false #  open shake (抖動特效)
+  mobile: false
+
+canvas_nest:
+  enable: true
+  # Color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  color: '0,0,255'
+  # The opacity of line (0~1)
+  opacity: 0.7
+  # The z-index property of the background
+  zIndex: -1
+  # The number of lines
+  count: 99
+  mobile: false
+
+mermaid:
+  enable: true
+  # Write Mermaid diagrams using code blocks
+  code_write: true
+  # built-in themes: default / forest / dark / neutral
+  theme:
+    light: default
+    dark: dark
+
+highlight:
+  exclude_languages: ['mermaid']
+prismjs:
+  exclude_languages: ['mermaid']
+
+# https://instant.page/
+# prefetch (預加載)
+instantpage: true
+
+aplayerInject:
+  enable: true
+  per_page: true
