@@ -9,7 +9,8 @@
     "server": "hexo server",
     "build-deploy": "hexo clean && hexo deploy",
     "post":"hexo new post $title",
-    "page":"hexo new page $title"
+    "page":"hexo new page $title",
+    "g-push":"git push gitee master && git push github master"
   },
   "hexo": {
     "version": "7.3.0"
